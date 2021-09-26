@@ -15,7 +15,14 @@ class HomePage extends StatelessWidget {
           body:  Center(
             child: FittedBox(
               fit: BoxFit.cover,
-                child: Image.network('https://blog.hubspot.com/hubfs/best%20photo%20editing%20apps.jpg')),
+                child: Row(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width/2,
+                        child: Image.network('https://blog.hubspot.com/hubfs/best%20photo%20editing%20apps.jpg')),
+                    Text('This is Loooooooooooong Text')
+                  ],
+                )),
           ),
         ));
   }

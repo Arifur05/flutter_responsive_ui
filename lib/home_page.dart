@@ -17,10 +17,10 @@ class HomePage extends StatelessWidget {
               fit: BoxFit.cover,
                 child: Row(
                   children: [
-                    Container(
-                      width: MediaQuery.of(context).size.width/2,
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width,
                         child: Image.network('https://blog.hubspot.com/hubfs/best%20photo%20editing%20apps.jpg')),
-                    Text('This is Loooooooooooong Text')
+                    Text('This is Loooooooooooong Text', style: TextStyle(fontSize: 16),)
                   ],
                 )),
           ),
